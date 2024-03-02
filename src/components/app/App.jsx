@@ -3,6 +3,7 @@ import ContactList from "../contactList/ContactList";
 import SearchBox from "../searchBox/SearchBox";
 import { useState, useEffect } from "react";
 import contactsData from "./../../contacts.json";
+import css from "./App.module.css";
 
 const SavedContacts =
   localStorage.getItem("contacts") !== null
@@ -36,11 +37,15 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Phonebook</h1>
-      <ContactForm onSubmit={handleFormSubmit} />
-      <SearchBox value={filter} onFilter={setFilter} />
-      <ContactList contacts={visibleContacts} onDelete={deleteContact} />
+    <div className={css.conteiner}>
+      <div className={css.header}>
+        <h1>Phonebook</h1>
+        <ContactForm onSubmit={handleFormSubmit} />
+      </div>
+      <div className={css.contacts}>
+        <SearchBox value={filter} onFilter={setFilter} />
+        <ContactList contacts={visibleContacts} onDelete={deleteContact} />
+      </div>
     </div>
   );
 }
