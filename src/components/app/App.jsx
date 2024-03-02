@@ -20,8 +20,6 @@ function App() {
 
   const handleFormSubmit = (newContact) => {
     setContacts((prevContacts) => {
-      console.log("cont", newContact);
-
       return [...prevContacts, newContact];
     });
   };
