@@ -1,7 +1,7 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiUser } from "react-icons/hi";
 
-export default function Contact({ contact }) {
+export default function Contact({ contact, onDelete }) {
   return (
     <div>
       <HiUser />
@@ -9,7 +9,13 @@ export default function Contact({ contact }) {
       <FaPhoneAlt />
       <div> {contact.number} </div>
 
-      <button>Delete</button>
+      <button
+        onClick={() => {
+          onDelete(contact.id);
+        }}
+      >
+        Delete
+      </button>
     </div>
   );
 }
