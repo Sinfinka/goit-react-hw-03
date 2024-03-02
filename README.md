@@ -1,8 +1,12 @@
-# React + Vite
+# Форми: Домашня Робота з React, Formik та Yup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис
 
-Currently, two official plugins are available:
+Цей репозиторій містить мою домашню роботу з теми "Форми", реалізовану за допомогою бібліотек React, Formik та Yup. Під час роботи над цим проектом я використовувала ці бібліотеки для створення форми, а також CSS модулі для стилізації.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Вміння, набуті під час проекту
+
+- Використання бібліотеки React для створення компонентів форм
+- Використання бібліотек Formik та Yup для управління станом форм та їх валідацією
+- Реалізація валідації введених даних в формах з використанням Yup та Formik
+- Використання CSS модулів для стилізації компонентів React
